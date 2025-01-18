@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "../Styles/PiP1o1.css"; // Import custom CSS for additional styling
+import "../Styles/Project101.css"; // Import custom CSS for additional styling
 import pip from "../Images/pip.jpg";
 function Project101() {
   return (
