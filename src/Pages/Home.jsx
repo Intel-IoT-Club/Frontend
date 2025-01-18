@@ -53,11 +53,6 @@ function Home() {
             <div>
   <Link to="/register"><button className="glitter-button">
     Join IoRT : Xperiance Robots!
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
   </button></Link>
 </div>
 
@@ -73,10 +68,21 @@ function Home() {
         }}
       >
         <Container>
-          <h3 style={{ textAlign: "center", marginBottom: "60px",marginTop:"30px" ,backgroundColor:"white",color:"black",padding:"5px"}}>
-            Notifications
-            <span style={{color:"red",fontSize:"25px",marginLeft:"20px"}} className="fas fa-bell"></span>
-          </h3>
+          <Row>
+            <h3 style={{
+              textAlign: "center",
+              marginBottom: "60px",
+              marginTop:"30px",
+              backgroundColor: "white",
+              color: "black",
+              borderRadius: "30px",
+              padding: "5px"
+            }}>
+              Notifications <span style={{color:"red",fontSize:"25px",marginLeft:"20px"}} className="fas fa-bell"></span>
+            </h3>
+
+            </Row>
+          
           <Homeeditbar display={display} />
           {notif.length === 0 ? (
             <>
@@ -101,6 +107,7 @@ function Home() {
           )}
         </Container>
       </div>
+      
       <div className="thirdPage" style={{
         backgroundImage: "linear-gradient(to right, #0f0c29, #302b63, #24243e)",
         minHeight: "200vh"
@@ -112,6 +119,7 @@ function Home() {
               marginBottom: "60px",
               backgroundColor: "white",
               color: "black",
+              borderRadius: "30px",
               padding: "5px"
             }}>
               Upcoming Events <span className="fas fa-fire"></span>
@@ -127,6 +135,7 @@ function Home() {
               marginBottom: "60px",
               backgroundColor: "white",
               color: "black",
+              borderRadius: "30px",
               padding: "5px"
             }}>
               Trailers and Teasers <span className="fas fa-video"></span>
