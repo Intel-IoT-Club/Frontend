@@ -5,7 +5,7 @@ import Home from './Pages/Home';
 import Members from './Pages/Members';
 import Projects from './Pages/Projects';
 import Gallery from "./Pages/Gallery";
-import Project101 from './Pages/Project101';
+import Project101 from './Pages/PiP1o1';
 import Events from "./Pages/Events"
 import Faq from "./Pages/Faq"
 import Admin from './Pages/Admin';
