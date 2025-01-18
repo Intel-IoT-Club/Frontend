@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../Styles/PiP1o1.css"; // Import custom CSS for additional styling
 import pip from "../Images/pip.jpg";
-function PiP1o1() {
+function Project101() {
   return (
     <div className="gaming-background">
       <Container className="content-container" style={{ marginBottom: "20px" }}>
@@ -82,4 +82,4 @@ function PiP1o1() {
   );
 }
 
-export default PiP1o1;
+export default Project101;
