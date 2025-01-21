@@ -79,7 +79,7 @@ body {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite reverse;
   display: inline-block;
-  font-size: 130px;
+  font-size: 7.0625rem;
 }
 
 @keyframes textclip {
