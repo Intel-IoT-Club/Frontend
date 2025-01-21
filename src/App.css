@@ -79,7 +79,7 @@ body {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite reverse;
   display: inline-block;
-  font-size: 130px;
+  font-size: 7rem;
 }
 
 @keyframes textclip {
@@ -96,6 +96,27 @@ body {
   padding-top:20px ;
   padding-bottom: 50px;
   background-size: cover;
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+  .firstPage {
+    min-height: 100vh;
+  }
+
+  .animate-charcter {
+    font-size: 4.5rem; 
+    letter-spacing: 10px; 
+    margin-bottom: 150px; 
+  }
+
+  .secondPage {
+    min-height: 110vh;
+    padding-top: 15px; 
+  }
+
+  .firstPage .container {
+    padding-top: 7rem;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 400px) {
@@ -136,7 +157,7 @@ body {
     margin-bottom: 0;
   }
   .animate-charcter {
-    font-size: 40px;
+    font-size: 34px;
   }
   .secondPage {
     min-height: 170vh;
