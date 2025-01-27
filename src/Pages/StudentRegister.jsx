@@ -13,6 +13,7 @@ function StudentRegister() {
 
   const [message, setMessage] = useState('');
   const [phoneError, setPhoneError] = useState('');
+  const [isHovered, setIsHovered] = useState(false);
 
   // Handle form input changes
   const handleChange = (e) => {
@@ -57,6 +58,7 @@ function StudentRegister() {
         style={{
           backgroundImage: 'linear-gradient(to right, #0f0c29, #302b63, #24243e)',
           minHeight: '100vh',
+          padding: '120px',
         }}
       >
         <div
@@ -68,7 +70,7 @@ function StudentRegister() {
             borderRadius: '10px',
           }}
         >
-          <h2 style={{ marginTop: '100px' }}>IoRT Registration</h2>
+          <h2 style={{ marginTop: '20px' }}>IoRT Registration</h2>
           {message && <p style={{ color: 'green' }}>{message}</p>}
           <form onSubmit={handleSubmit}>
             <div style={{ marginBottom: '15px' }}>
@@ -207,10 +209,13 @@ function StudentRegister() {
                 padding: '10px 20px',
                 border: 'none',
                 borderRadius: '5px',
-                backgroundColor: 'blue',
+                backgroundColor: isHovered ? '#4d4df7' : 'blue',
                 color: 'white',
                 cursor: 'pointer',
+                marginBottom: '10px',
               }}
+              onMouseOver={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
             >
               Register
             </button>
