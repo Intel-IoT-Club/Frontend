@@ -50,12 +50,6 @@ function Home() {
               <h3 className="animate-charcter" > INTEL I o T CLUB </h3> <br />
               
             </div>
-            <div>
-  <Link to="/register"><button className="glitter-button">
-    Join IoRT : Xperiance Robots!
-  </button></Link>
-</div>
-
           </div>
         </div>
       </div>
